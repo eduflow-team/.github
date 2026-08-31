@@ -2,7 +2,7 @@
 
 # EduFlow
 
-<video src="../docs/assets/demo.mp4" width="720" controls autoplay muted loop playsinline></video>
+<img src="../docs/assets/demo.gif" alt="EduFlow demo" width="720" />
 
 </div>
 
@@ -18,6 +18,8 @@ AI를 쓰는 학생은 늘었지만, **제대로 읽고·검증하며 쓰는 법
 - **Hallucination 탐지** — AI 답변의 오류를 찾고 유형을 분류
 - **AI 토론** — 찬반 에이전트 토론을 평가자로 검증
 - **보안 실습** — 프롬프트 인젝션에 대응하는 방어 연습
+
+<br/>
 
 ## &nbsp;&nbsp;Tech stack
 
