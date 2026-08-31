@@ -1,8 +1,8 @@
 <div align="center">
 
-# <img src="../docs/assets/logo.svg" alt="" width="40" height="38" /> EduFlow
-
 <img src="../docs/assets/demo.gif" alt="EduFlow demo" width="720" />
+
+# EduFlow
 
 </div>
 
