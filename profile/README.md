@@ -1,16 +1,15 @@
-<div align="center">
-
-<img src="../docs/assets/demo.gif" alt="EduFlow demo" width="720" />
-
 # EduFlow
 
 </div>
 
+<div align="center">
+
+<img src="../docs/assets/demo.gif" alt="EduFlow demo" width="720" />
+
 <br/>
 
-AI를 쓰는 학생은 늘었지만, **제대로 읽고·검증하며 쓰는 법**을 배우기 어렵습니다.  
-환각·편향·프롬프트 인젝션 같은 리스크는 교과서만으로는 체감되지 않고,  
-교사는 출제·채점·학급 현황을 한곳에서 보기 힘듭니다.
+AI를 쓰는 학생은 늘었지만 **제대로 읽고·검증하며 쓰는 법**을 배우기 어렵습니다.  
+환각·편향·프롬프트 인젝션 같은 리스크는 교과서만으로는 체감되지 않고 교사는 출제·채점·학급 현황을 한곳에서 보기 힘듭니다.
 
 **EduFlow**에서는 이렇게 연습합니다.
 
