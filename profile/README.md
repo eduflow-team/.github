@@ -1,10 +1,10 @@
-# EduFlow
-
-</div>
-
 <div align="center">
 
 <img src="../docs/assets/demo.gif" alt="EduFlow demo" width="720" />
+
+# EduFlow
+
+</div>
 
 <br/>
 
