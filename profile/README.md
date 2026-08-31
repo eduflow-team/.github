@@ -31,6 +31,18 @@ AI를 쓰는 학생은 늘었지만, **제대로 읽고·검증하며 쓰는 법
 
 <br/>
 
+## &nbsp;&nbsp;Architecture
+
+<div align="center">
+
+<!-- 아키텍처 다이어그램: docs/assets/architecture.png 추가 후 아래 주석 해제
+<img src="../docs/assets/architecture.png" alt="EduFlow architecture" width="720" />
+-->
+
+</div>
+
+<br/>
+
 ## &nbsp;&nbsp;Quick start
 
 ### &nbsp;&nbsp;Frontend
