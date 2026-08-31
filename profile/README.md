@@ -29,6 +29,8 @@ AI를 쓰는 학생은 늘었지만, **제대로 읽고·검증하며 쓰는 법
 | [`backend`](https://github.com/eduflow-team/backend) | API · DB · 채점 | [![Python](https://img.shields.io/badge/Python-3.11+-3776AB?style=flat-square&logo=python&logoColor=white&labelColor=222222)](https://www.python.org/) [![FastAPI](https://img.shields.io/badge/FastAPI-0.115-009688?style=flat-square&logo=fastapi&logoColor=white&labelColor=222222)](https://fastapi.tiangolo.com/) [![PostgreSQL](https://img.shields.io/badge/PostgreSQL-16-4169E1?style=flat-square&logo=postgresql&logoColor=white&labelColor=222222)](https://www.postgresql.org/) [![pgvector](https://img.shields.io/badge/pgvector-vector-222222?style=flat-square&labelColor=222222)](https://github.com/pgvector/pgvector) |
 | [`ai`](https://github.com/eduflow-team/ai) | Langflow · 프롬프트 | [![Langflow](https://img.shields.io/badge/Langflow-1.10.0-000000?style=flat-square&labelColor=222222)](https://www.langflow.org/) [![Docker](https://img.shields.io/badge/Docker-Compose-2496ED?style=flat-square&logo=docker&logoColor=white&labelColor=222222)](https://www.docker.com/) |
 
+<br/>
+
 ## &nbsp;&nbsp;Quick start
 
 ### &nbsp;&nbsp;Frontend
@@ -58,6 +60,8 @@ cd ai
 cp .env.example .env
 docker compose up -d
 ```
+
+<br/>
 
 ## &nbsp;&nbsp;Team
 
