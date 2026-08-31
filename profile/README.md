@@ -1,63 +1,82 @@
+<div align="center">
+
 # EduFlow
 
-중·고등학생 AI 리터러시 교육을 위한 학습 플랫폼입니다.  
-선생님은 과제를 내고, 학생은 RAG·환각 탐지·토론·보안 시나리오를 따라가며 AI를 비판적으로 다루는 연습을 합니다.
+<video src="../docs/assets/demo.mp4" width="720" controls autoplay muted loop playsinline></video>
 
-<!-- 내일 교체: 데모 GIF 또는 히어로 스크린샷
-![EduFlow demo](../docs/assets/demo.gif)
--->
+</div>
 
-## Repositories
+<br/>
 
-| Repo | Role |
-|------|------|
-| [`frontend`](https://github.com/eduflow-team/frontend) | 학생·교사 웹 (React + Vite) |
-| [`backend`](https://github.com/eduflow-team/backend) | API · DB · 채점 (FastAPI + PostgreSQL + pgvector) |
-| [`ai`](https://github.com/eduflow-team/ai) | Langflow 워크플로 · 로컬 AI 환경 |
+AI를 쓰는 학생은 늘었지만, **제대로 읽고·검증하며 쓰는 법**을 배우기 어렵습니다.  
+환각·편향·프롬프트 인젝션 같은 리스크는 교과서만으로는 체감되지 않고,  
+교사는 출제·채점·학급 현황을 한곳에서 보기 힘듭니다.
 
-## Learning stages
+**EduFlow**에서는 이렇게 연습합니다.
 
-1. **RAG 체험** — 학습 자료를 바탕으로 AI와 대화하며 서술형 답안을 작성 (키포인트 부분 채점)
-2. **Hallucination 탐지** — AI 답변의 오류를 찾고 유형을 분류
-3. **AI 토론** — 찬반 에이전트 토론을 평가자로 검증
-4. **보안 강화** — 프롬프트 인젝션에 대응하는 실습
+- **RAG 체험** — 학습 자료를 근거로 AI와 대화하고, 서술형 답안을 키포인트로 부분 채점
+- **Hallucination 탐지** — AI 답변의 오류를 찾고 유형을 분류
+- **AI 토론** — 찬반 에이전트 토론을 평가자로 검증
+- **보안 실습** — 프롬프트 인젝션에 대응하는 방어 연습
 
-## Quick start (local)
+## Tech stack
 
-자세한 설정은 각 레포 README를 참고하세요.
+### [`frontend`](https://github.com/eduflow-team/frontend) — 학생·교사 웹
+[![React](https://img.shields.io/badge/React-19-61DAFB?style=flat-square&logo=react&logoColor=white&labelColor=222222)](https://react.dev/)
+[![Vite](https://img.shields.io/badge/Vite-8-646CFF?style=flat-square&logo=vite&logoColor=white&labelColor=222222)](https://vite.dev/)
+[![TypeScript](https://img.shields.io/badge/TypeScript-5-3178C6?style=flat-square&logo=typescript&logoColor=white&labelColor=222222)](https://www.typescriptlang.org/)
+[![React Router](https://img.shields.io/badge/React_Router-7-CA4245?style=flat-square&logo=reactrouter&logoColor=white&labelColor=222222)](https://reactrouter.com/)
+
+### [`backend`](https://github.com/eduflow-team/backend) — API · DB · 채점
+[![Python](https://img.shields.io/badge/Python-3.11+-3776AB?style=flat-square&logo=python&logoColor=white&labelColor=222222)](https://www.python.org/)
+[![FastAPI](https://img.shields.io/badge/FastAPI-0.115-009688?style=flat-square&logo=fastapi&logoColor=white&labelColor=222222)](https://fastapi.tiangolo.com/)
+[![PostgreSQL](https://img.shields.io/badge/PostgreSQL-16-4169E1?style=flat-square&logo=postgresql&logoColor=white&labelColor=222222)](https://www.postgresql.org/)
+[![pgvector](https://img.shields.io/badge/pgvector-vector-222222?style=flat-square&labelColor=222222)](https://github.com/pgvector/pgvector)
+
+### [`ai`](https://github.com/eduflow-team/ai) — Langflow · 프롬프트
+[![Langflow](https://img.shields.io/badge/Langflow-1.10.0-000000?style=flat-square&labelColor=222222)](https://www.langflow.org/)
+[![Docker](https://img.shields.io/badge/Docker-Compose-2496ED?style=flat-square&logo=docker&logoColor=white&labelColor=222222)](https://www.docker.com/)
+
+## Quick start
+
+### Frontend → http://localhost:5173
 
 ```bash
-# backend
-cd backend && docker compose up -d
-# frontend
-cd frontend && npm install && npm run dev
+git clone https://github.com/eduflow-team/frontend.git
+cd frontend
+cp .env.example .env
+npm install && npm run dev
 ```
 
-- Frontend: `http://localhost:5173`
-- Backend docs: `http://localhost:8000/docs`
+### Backend → http://localhost:8000/docs
 
-## Branch
+```bash
+git clone https://github.com/eduflow-team/backend.git
+cd backend
+cp .env.example .env
+docker compose up -d --build
+docker compose exec backend alembic upgrade head
+```
 
-- `develop` — 통합·일상 작업 기준
-- `main` — 안정 반영 (레포별로 시점이 다를 수 있음)
+### AI → http://localhost:7860
 
-## Screenshots
-
-> 내일 추가 예정
->
-> - 학생 Stage1 (채팅 + 서술형 제출)
-> - 채점 결과 (키포인트 체크)
-> - 선생님 출제 (키포인트 3개)
-> - (선택) 대시보드
+```bash
+git clone https://github.com/eduflow-team/ai.git
+cd ai
+cp .env.example .env
+docker compose up -d
+```
 
 ## Team
 
-EduFlow — 한이음 프로젝트
+<div align="center">
 
----
+| <a href="https://github.com/ucaeon"><img src="https://github.com/ucaeon.png" width="80" height="80" style="border-radius:50%"/><br/><b>유채원</b></a> | <a href="https://github.com/CHeeRiNG-CHiCKeN"><img src="https://github.com/CHeeRiNG-CHiCKeN.png" width="80" height="80" style="border-radius:50%"/><br/><b>손주희</b></a> | <a href="https://github.com/garden0324"><img src="https://github.com/garden0324.png" width="80" height="80" style="border-radius:50%"/><br/><b>임정원</b></a> | <a href="https://github.com/lyudongwon"><img src="https://github.com/lyudongwon.png" width="80" height="80" style="border-radius:50%"/><br/><b>류동원</b></a> |
+|:---:|:---:|:---:|:---:|
+| [@ucaeon](https://github.com/ucaeon) | [@CHeeRiNG-CHiCKeN](https://github.com/CHeeRiNG-CHiCKeN) | [@garden0324](https://github.com/garden0324) | [@lyudongwon](https://github.com/lyudongwon) |
 
-<!-- 작업 메모 (공개 README에서 지워도 됨)
-- demo.gif / 스크린샷 넣기
-- 팀원·역할 링크
-- 배포 URL 있으면 상단에 배지
--->
+</div>
+
+<br/>
+
+<p align="center">EduFlow — 한이음 프로젝트</p>
